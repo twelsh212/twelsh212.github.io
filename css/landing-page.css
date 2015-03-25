@@ -109,10 +109,10 @@ h6 {
     border-top: 3px solid #e7e7e7;
 }
 
-.banner {
+div.banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url() no-repeat center center;
+    /*background: url(../img/footer-bg.jpg) no-repeat center center;*/
     background-size: cover;
 }
 
@@ -163,4 +163,11 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+.left-flow{
+    float: left;
+}
+.inside-desc{
+    clear: both;
+    padding-left: 25px;
 }
