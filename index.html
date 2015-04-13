@@ -1,8 +1,33 @@
-<html>
-<head></head>
-<body>
+<!DOCTYPE html>
 
-<center><h1>Blogs are stupid.</h1>
-<h3>Love you, Brother.</h3></center>
-</body>
+<html lang = "en"> 
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Journal Simply</title>
+        <meta charset = "utf-8"/>
+        <meta name = "Author"        content = "Terrence Welsh"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+        <script type="text/javascript"  src="journal.js" ></script>
+    </head>
+    <body class="journal">
+	  	<header>
+	    	<div class="nav">
+			    <ul>
+			      	<li><a class = "active" href="index.html">Home</a></li>
+			        <li><a href="">Archive</a></li>
+			    </ul>
+	    	</div>
+	    </header>
+	    <div class = "homeHeader">
+	    	Welcome to the Internets!
+	    </div>
+	    <div class = 'container'>
+	    	<form class="jourEntry">
+	    		<input class='jourContent' type="text">  <!-- default value = date/time --> </br>
+	    		<textarea class='jourContent' name="Content" cols="0" rows="40" placeholder="Tell me about your day..."></textarea>
+	    		<input type="submit" value="Submit" id="jourSubmit">
+	    	</form>
+	    </div>
+	</body>
 </html>
