@@ -8,7 +8,14 @@
         <meta name = "Author"        content = "Terrence Welsh"/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-        <script type="text/javascript"  src="journal.js" ></script>
+        <script type="text/javascript"  src="scripts/journal.js" ></script>
+        <style type="text/css" media="all">
+			@import "css/info.css";
+			@import "css/main.css";
+			@import "css/widgEditor.css";
+		</style>
+
+<script type="text/javascript" src="scripts/widgEditor.js"></script>
     </head>
     <body class="journal">
 	  	<header>
@@ -19,13 +26,13 @@
 			    </ul>
 	    	</div>
 	    </header>
-	    <div class = "homeHeader">
+	    <div class = "homeHeader"> </br>
 	    	Welcome to Journal Simply
 	    </div>
 	    <div class = 'container'>
 	    	<form class="jourEntry">
 	    		<input class='jourContent' type="text">  <!-- default value = date/time --> </br>
-	    		<textarea class='jourContent' name="Content" cols="0" rows="40" placeholder="Tell me about your day..."></textarea> </br>
+	    		<textarea class='jourContent widgEditor' name="Content">Tell me about your day...</textarea> </br>
 	    		<input type="submit" value="Submit" id="jourSubmit">
 	    	</form>
 	    </div>
