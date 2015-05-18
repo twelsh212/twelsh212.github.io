@@ -2,7 +2,6 @@ $(document).ready(function(){
 	var winSize = ($(window).width()) * .08;
 	$("textarea").attr("cols", winSize);
 	$("input.jourContent").attr("value", (getDOW() + ": " + $.datepicker.formatDate('mm/dd/yy', new Date())));
-
 });
 
 function getDOW(){
@@ -11,3 +10,4 @@ function getDOW(){
 	return days[day];
 }
 
+// made sme changes to shit.
