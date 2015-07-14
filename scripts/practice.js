@@ -18,5 +18,7 @@ $(document).ready(function(){
             $("#art2btn").text("Expand Story");
         }
     });
-    ]
+
+    
+    
 });
