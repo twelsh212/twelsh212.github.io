@@ -1,123 +1,279 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Terry Welsh</title>
-    <meta charset = "utf-8">
-    <link href="css/style.css" rel="stylesheet" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/practice.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
-    <div id="wrapper">
-        <div class = "mainHeader">
-            <header>
-                <h1>Namey Name</h1>
-                <h3>Professional Position</h3>
-            </header>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Super Awesome Title</a>
+            </li>
+            <!-- <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Top</a>
+            </li> -->
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >When it is</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >What it is</a>
+            </li>
+            <!-- <li>
+                <a href="#portfolio" onclick = $("#menu-close").click(); >Map</a>
+            </li> -->
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Find us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Super Awesome Title</h1>
+            <h3>124 E Tompkins</h3>
+            <h3>Columbus, Ohio 43202</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href = "#">Home</a></li>
-                    <li><a href = "#">About</a></li>
-                    <li><a href="#">Order</a></li>
-                    <li class="rightNav"><a>Some other text</a></li>
-                </ul>
-            </nav>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Come join us for our house-warming party!</h2>
+                    <p class="lead">This will start around 7pm on Saturday, August 8.</p>
+                </div>
+            </div>
+            <!-- /.row -->
         </div>
-        <div class = "mainSection">
-            <section>
-                <article>
-                    <header>
-                        <h2>My Whole Life Story</h2>
-                    </header>
-                    <div id ="art1" class="hiddenOnLoad">
-                        <section>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                        </section>
-                    </div>
-                    <div class ="centerEle">
-                        <button id="art1btn" class="expandBtn">Expand Story</button>
-                    </div>
-                </article><br/>
-                <article>
-                    <header>
-                        <h2>My Experience</h2>
-                    </header>
-                    <div id="art2" class="hiddenOnLoad">
-                        <section>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis erat neque. Nam non neque.
-                        </section>
-                    </div>
-                    <div class="centerEle">
-                        <button id="art2btn" class="expandBtn">Expand Story</button>
-                    </div>
-                </article><br/><br/>
-                <article>
-                    <section>
-                        <div>
-                            <header>
-                                <h2>One More Section!</h2>
-                            </header>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>What we will have</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-spoon fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Food</strong>
+                                </h4>
+                                <p>We will likely have some sort of snack food, maybe some nachos, popcorn, things like that. I.E. We are not buying you dinner.</p>
+                                <a class="noButton btn btn-light">Learn More</a>
+                            </div>
                         </div>
-                    </section>
-                </article>
-            </section>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-beer fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Drinks</strong>
+                                </h4>
+                                <p>We will have some PBR, and probably the fixins for Velvet Thunder, but you should bring your own stuff, because you should.</p>
+                                <a class="noButton btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-music fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Music</strong>
+                                </h4>
+                                <p>Connor, Emily, and I have composed a playlist that everyone can appreciate. Of course, we are willing to add some songs per request.</p>
+                                <a class="noButton btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-trophy fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>A Theme!</strong>
+                                </h4>
+                                <p>We are going to have a theme, but we don't know what it is yet, so we are are putting this stupid filler text in here for the time being.</p>
+                                <a class="noButton btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
         </div>
-        <div class="centerEle">
-            <aside>
-                <section>
-                    <ul>
-                        <li><a href="https://github.com/twelsh212"><img src="images/1435359506_Github.png" /></a></li>
-                        <li><a href="https://twitter.com/thehumanwall212"><img src="images/1435359521_Twitter.png" /></a></li>
-                        <li><a href="https://www.linkedin.com/pub/terry-welsh/61/ba/671"><img src="images/1435359517_LinkedIn.png" /></a></li>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>There will be </br>no outdoors.</h1>
+        </div>
+    </aside>
+
+    <!--
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Our Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- /.row (nested)
+                    <a href="#" class="btn btn-dark">View More Items</a>
+                </div>
+                <!-- /.col-lg-10
+            </div>
+            <!-- /.row
+        </div>
+        <!-- /.container
+    </section>
+Portfolio -->
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>The buttons below are impossible to resist.</h3>
+                    <a class="btn btn-lg btn-light">Click Me!</a>
+                    <a class="btn btn-lg btn-dark">Look at Me!</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Map -->
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Super Awesome Title</strong>
+                    </h4>
+                    <p>124 E Tompkins<br>Columbus, OH 43202</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (740) 808-6089</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">thehumanwall212@gmail.com</a>
+                        </li>
                     </ul>
-                </section>
-            </aside>
-        <div>
-        <div class="centerEle">
-            <footer>
-                <p>Copyright &copy; 2015 Me</p>
-            </footer>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; No one will steal this 2015</p>
+                </div>
+            </div>
         </div>
-    </div>   
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.simplemodal.1.4.4.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/party.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+
 </body>
+
 </html>
