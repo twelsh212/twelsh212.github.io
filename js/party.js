@@ -9,16 +9,22 @@ $("#menu-toggle").click(function(e) {
     $("#sidebar-wrapper").toggleClass("active");
 });
 
-$(".noButton").click(function(e){
-   $.modal("<div class='modalClass'><h1>That is literally all the information we have...</h1></div>");
-   $("body").addClass("modalBody");
-   $(".modalBody").css({
-      "background-color": "rgb(0,0,0, 0.2)",
-      "z-index": "4000"
-   });
-
-});
-
+$(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+    $( ".opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+ });
 
 // Scrolls to the selected menu item on the page
 $(function() {
